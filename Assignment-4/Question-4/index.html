@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frameset Layout</title>
+</head>
+<frameset rows="20%,80%">
+  <frame name="topFrame" title="Navigation" srcdoc='
+    <html>
+      <head><title>Navigation</title></head>
+      <body>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+      </body>
+    </html>'>
+  <frame name="bottomFrame" title="Welcome Message" srcdoc='
+    <html>
+      <head><title>Welcome</title></head>
+      <body>
+        Welcome to My Website
+      </body>
+    </html>'>
+</frameset>
+</html>
