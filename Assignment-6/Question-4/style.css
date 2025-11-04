@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard Grid Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffb400;
+}
+
+/* Main Content Area */
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+/* Boxes */
+.box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Spanning Box */
+.box4 {
+  grid-column: span 2;
+  background-color: #ffb400;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content";
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .box4 {
+    grid-column: span 1;
+  }
+}
