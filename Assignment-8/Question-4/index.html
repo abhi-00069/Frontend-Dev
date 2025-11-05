@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+    <p>Explore how various CSS selectors work and affect different elements.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Element Selector Example</h2>
+      <p>This paragraph is styled using the <strong>element selector</strong>.</p>
+      <p>All paragraphs share the same styling because of the element type.</p>
+    </section>
+
+    <section>
+      <h2>Class and ID Selectors</h2>
+      <p class="highlight">This paragraph uses a class selector.</p>
+      <p id="unique">This paragraph uses an ID selector.</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selectors</h2>
+      <a href="https://example.com">Secure Link (https)</a>
+      <a href="http://example.com">Insecure Link (http)</a>
+      <input type="text" placeholder="Type something here" />
+    </section>
+
+    <section class="combinators">
+      <h2>Combinators Examples</h2>
+      <div class="parent">
+        <p>Child paragraph (targeted by direct child > selector).</p>
+        <span>Sibling (+) will be styled differently.</span>
+        <p>Another paragraph inside the same parent.</p>
+        <div>
+          <p>Nested paragraph (descendant selector).</p>
+        </div>
+      </div>
+      <p class="next">General sibling (~) styled element.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CSS Selectors Practice Page</p>
+  </footer>
+</body>
+</html>
+
