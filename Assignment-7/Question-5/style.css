@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+h1, h2 {
+  color: #1a73e8;
+}
+
+input[type="text"] {
+  border: 2px solid #1a73e8;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="password"] {
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+a[href^="http:"] {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.styled-list li:nth-child(odd) {
+  background: #e3f2fd;
+}
+
+.styled-list li:nth-child(even) {
+  background: #bbdefb;
+}
+
+.styled-list li::before {
+  content: "→ ";
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.styled-list li::after {
+  content: " ✓";
+  color: #43a047;
+}
+
+.parent > p {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+p + span {
+  color: #1976d2;
+  font-style: italic;
+}
+
+.parent ~ .general {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.parent div p {
+  color: #6a1b9a;
+}
