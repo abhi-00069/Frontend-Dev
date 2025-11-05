@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Box-Sizing Comparison</h1>
+  <p class="intro">This page demonstrates the difference between <strong>content-box</strong> (default) and <strong>border-box</strong> sizing models.</p>
+
+  <div class="container">
+    <div class="box content-box">
+      <h2>Content-Box</h2>
+      <p>Width and height apply only to the content area. Padding and border are added to total size.</p>
+    </div>
+    <div class="box border-box">
+      <h2>Border-Box</h2>
+      <p>Width and height include padding and border, keeping total box size consistent.</p>
+    </div>
+  </div>
+</body>
+</html>
