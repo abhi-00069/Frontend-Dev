@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>CSS Box Model Exploration</h1>
+  <div class="container">
+    <div class="box default-box">
+      <div class="label">Default (content-box)</div>
+      <p>This box uses the default <strong>content-box</strong> model. Width and height apply only to the content area, excluding padding and border.</p>
+    </div>
+    <div class="box border-box">
+      <div class="label">With box-sizing: border-box</div>
+      <p>This box uses <strong>box-sizing: border-box</strong>. Width and height include padding and border, making layout sizing easier.</p>
+    </div>
+  </div>
+</body>
+</html>
