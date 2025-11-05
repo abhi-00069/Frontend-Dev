@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced CSS Selectors Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Advanced CSS Selectors Demonstration</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Type something..." />
+      <input type="password" placeholder="Password" />
+      <a href="https://example.com">Secure Link (https)</a>
+      <a href="http://example.com">Regular Link (http)</a>
+    </section>
+
+    <section>
+      <h2>List with Pseudo-Classes and Elements</h2>
+      <ul class="styled-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ul>
+    </section>
+
+    <section class="combinators">
+      <h2>Combinators Example</h2>
+      <div class="parent">
+        <p>Direct child (>) paragraph</p>
+        <span>Sibling (+) example</span>
+        <p>Another paragraph</p>
+        <div>
+          <p>Descendant paragraph</p>
+        </div>
+      </div>
+      <p class="general">General sibling (~) paragraph</p>
+    </section>
+  </main>
+</body>
+</html>
