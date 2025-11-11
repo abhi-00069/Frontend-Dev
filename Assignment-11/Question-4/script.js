@@ -1,0 +1,11 @@
+const marks = [88, 92, 79, 85, 90];
+const anyBelow35 = marks.some(m => m < 35);
+const sum = marks.reduce((a, b) => a + b, 0);
+const percentage = (sum / 500) * 100;
+let status;
+if (anyBelow35) status = "Detained";
+else if (percentage >= 85) status = "Promoted with Distinction";
+else if (percentage >= 50) status = "Promoted";
+else status = "Detained";
+console.log("Percentage:", percentage.toFixed(2));
+console.log("Status:", status);
