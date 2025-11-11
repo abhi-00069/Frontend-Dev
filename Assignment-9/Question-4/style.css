@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f7;
+  color: #222;
+}
+
+/* Section Styling */
+.text-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ✅ Below 700px */
+@media (max-width: 700px) {
+  .text-section {
+    padding: 20px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.8;
+    margin-top: 10px;
+  }
+}
