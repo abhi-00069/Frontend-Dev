@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q4 - Special Offer Banner</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q4.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .banners { display:flex; gap:10px; flex-wrap:wrap; }
+    .banner { width:180px; height:80px; border-radius:6px; padding:8px; color:#fff; display:flex; align-items:center; justify-content:center; }
+    .b1 { background:#ff6b6b; } .b2 { background:#6b8bff; } .b3 { background:#6bff8a; } .b4 { background:#ffb86b; } .b5 { background:#9b6bff; }
+    button { margin-right:8px; margin-top:10px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Special Offers</h1>
+    <div class="controls">
+      <button id="hideBtn">Hide Specific (3)</button>
+      <button id="showBtn">Show All</button>
+      <button id="slideToggleBtn">Slide Up/Down</button>
+      <button id="fadeToggleBtn">Fade In/Out</button>
+    </div>
+
+    <section class="banners" id="banners">
+      <div class="banner b1" data-id="1">Offer 1</div>
+      <div class="banner b2" data-id="2">Offer 2</div>
+      <div class="banner b3" data-id="3">Offer 3</div>
+      <div class="banner b4" data-id="4">Offer 4</div>
+      <div class="banner b5" data-id="5">Offer 5</div>
+    </section>
+  </main>
+</body>
+</html>
