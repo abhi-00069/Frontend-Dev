@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q5 - College Timetable Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="q5.js" defer></script>
+
+  <style>
+    body { font-family: Arial; padding:20px; max-width:900px; margin:auto; }
+    header, main { margin-bottom:20px; }
+    select { padding:6px; }
+    .card {
+      border:1px solid #ddd;
+      padding:10px;
+      border-radius:6px;
+      margin-bottom:10px;
+    }
+    .noClasses { font-weight:bold; color:#b00; margin-top:10px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>College Timetable Viewer</h1>
+    <p>Select a weekday to load schedule using Fetch API.</p>
+  </header>
+
+  <main>
+    <section>
+      <label for="daySelect">Choose Day:</label>
+      <select id="daySelect">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+    </section>
+
+    <section id="classesSection">
+      <h2>Classes</h2>
+      <div id="classes"></div>
+      <div id="noClasses" class="noClasses" style="display:none;">No classes today.</div>
+    </section>
+  </main>
+
+  <footer><small>Q5 — Fetch API + Dynamic DOM Rendering</small></footer>
+</body>
+</html>
