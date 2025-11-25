@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q2 - Employee Status Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="q2.css">
+  <script src="q2.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px; max-width:900px; margin:auto; }
+    header, main { margin-bottom:16px; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { padding:8px 10px; border:1px solid #ddd; text-align:left; }
+    .toggle { cursor:pointer; padding:6px 10px; border-radius:4px; }
+    .active { background:#dff7e0; color:#1a8a2f; }
+    .inactive { background:#ffecec; color:#a00; }
+    .error { color:#b00; font-weight:700; margin-top:8px; }
+    .loading { display:inline-block; padding:6px 10px; background:#f0f0f0; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Employee Status Dashboard</h1>
+    <p>Toggle employee status; changes are sent via <code>XMLHttpRequest</code> PATCH to JSON Server.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="employees-heading">
+      <h2 id="employees-heading">Employees</h2>
+      <div id="loading" class="loading">Loading employees...</div>
+      <table id="employeesTable" class="hidden" aria-live="polite">
+        <thead>
+          <tr><th>ID</th><th>Name</th><th>Role</th><th>Email</th><th>Status</th><th>Action</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="errorMsg" class="error" role="alert" aria-live="assertive"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Q2 — Uses XMLHttpRequest for GET and PATCH on <code>/employees</code></small>
+  </footer>
+</body>
+</html>
