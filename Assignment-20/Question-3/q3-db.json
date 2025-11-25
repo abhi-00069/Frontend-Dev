@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    { "id": 1, "title": "Prepare project report", "priority": "High", "completed": false },
+    { "id": 2, "title": "Fix UI alignment", "priority": "Medium", "completed": true },
+    { "id": 3, "title": "Client follow-up email", "priority": "Low", "completed": false },
+    { "id": 4, "title": "Database backup", "priority": "High", "completed": false },
+    { "id": 5, "title": "Create presentation slides", "priority": "Medium", "completed": false },
+    { "id": 6, "title": "Team meeting", "priority": "Low", "completed": true }
+  ]
+}
