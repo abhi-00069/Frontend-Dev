@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q1 - Welcome Greeting</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q1.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    header, main, footer { margin-bottom:12px; }
+    #welcome { font-size:1.25rem; margin:12px 0; }
+    .hidden { display:none; }
+    button { margin-right:8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome Page</h1>
+  </header>
+  <main>
+    <section aria-labelledby="welcome">
+      <div id="welcome" role="status"></div>
+      <div id="quote" class="hidden">“Push yourself because no one else is going to do it for you.”</div>
+      <button id="changeGreeting">Change Greeting</button>
+      <button id="toggleWelcome">Toggle Welcome Message</button>
+      <button id="resetGreeting">Reset Greeting</button>
+    </section>
+
+    <section aria-label="Quick actions">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>© Example</footer>
+</body>
+</html>
