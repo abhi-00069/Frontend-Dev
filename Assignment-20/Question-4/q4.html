@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q4 - Multi API Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="q4.js" defer></script>
+
+  <style>
+    body { font-family: Arial; padding:20px; max-width:900px; margin:auto; }
+    header, main { margin-bottom:20px; }
+    .grid { display:flex; gap:20px; }
+    .card {
+      flex:1;
+      border:1px solid #ddd;
+      padding:20px;
+      border-radius:8px;
+      text-align:center;
+    }
+    .skeleton {
+      height:24px;
+      background:#eee;
+      border-radius:4px;
+      margin-top:10px;
+      animation: pulse 1.2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity:0.5; }
+      50% { opacity:1; }
+      100% { opacity:0.5; }
+    }
+    .error { color:#b00; font-weight:bold; margin-top:15px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dashboard Overview</h1>
+    <p>Data fetched from 3 APIs simultaneously using <code>Promise.all</code>.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card" id="usersCard">
+        <h2>Total Users</h2>
+        <div class="value skeleton"></div>
+      </div>
+
+      <div class="card" id="ordersCard">
+        <h2>Total Orders</h2>
+        <div class="value skeleton"></div>
+      </div>
+
+      <div class="card" id="productsCard">
+        <h2>Total Products</h2>
+        <div class="value skeleton"></div>
+      </div>
+    </div>
+
+    <div id="warning" class="error" style="display:none;">
+      Some data could not be loaded.
+    </div>
+  </main>
+
+  <footer>
+    <small>Q4 — Fetch API + Promise.all</small>
+  </footer>
+</body>
+</html>
