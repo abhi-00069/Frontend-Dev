@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Q9 Form Validator</title>
+  <link rel="stylesheet" href="q9.css">
+</head>
+<body>
+  <div class="form-wrap">
+    <form id="userForm" novalidate>
+      <div class="field">
+        <label>Name<input id="nameField" required /></label>
+        <div class="error" id="nameError"></div>
+      </div>
+      <div class="field">
+        <label>Email<input id="emailField" required /></label>
+        <div class="error" id="emailError"></div>
+      </div>
+      <div class="field">
+        <label>Password<input id="passwordField" type="password" required /></label>
+        <div class="error" id="passwordError"></div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="successMessage" class="hidden">Form Submitted Successfully</div>
+  </div>
+  <script src="q9.js"></script>
+</body>
+</html>
