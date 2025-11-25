@@ -1,0 +1,10 @@
+{
+  "employees": [
+    { "id": 1, "name": "Alice Johnson", "status": "active", "role": "Engineer", "email": "alice.j@example.com" },
+    { "id": 2, "name": "Bob Martin", "status": "inactive", "role": "Designer", "email": "bob.m@example.com" },
+    { "id": 3, "name": "Carlos Vega", "status": "active", "role": "QA", "email": "carlos.v@example.com" },
+    { "id": 4, "name": "Diana Ross", "status": "active", "role": "Product", "email": "diana.r@example.com" },
+    { "id": 5, "name": "Ethan Hunt", "status": "inactive", "role": "DevOps", "email": "ethan.h@example.com" },
+    { "id": 6, "name": "Fiona Lee", "status": "active", "role": "Support", "email": "fiona.l@example.com" }
+  ]
+}
