@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fjallraven Backpack",
+      "price": 109.95,
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "description": "Classic backpack for everyday use"
+    },
+    {
+      "id": 2,
+      "name": "Mens Casual Premium Slim Fit T-Shirts",
+      "price": 22.3,
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_UL480_QL65_.jpg",
+      "description": "Cotton t-shirt in multiple colors"
+    },
+    {
+      "id": 3,
+      "name": "Solid Gold Petite Micropave",
+      "price": 168.0,
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UY879_.jpg",
+      "description": "Elegant women's ring"
+    },
+    {
+      "id": 4,
+      "name": "White Gold Plated Princess",
+      "price": 9.99,
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "description": "Stylish necklace"
+    },
+    {
+      "id": 5,
+      "name": "Pierced Owl Rose Gold Plated Stainless Steel",
+      "price": 10.99,
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "description": "Fashionable earrings"
+    },
+    {
+      "id": 6,
+      "name": "WD 2TB Elements Portable External Hard Drive",
+      "price": 64,
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "description": "Fast storage drive"
+    }
+  ]
+}
