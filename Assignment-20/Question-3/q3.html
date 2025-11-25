@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q3 - Task Manager</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q3.js" defer></script>
+
+  <style>
+    body { font-family: Arial; padding:20px; max-width:900px; margin:auto; }
+    header, main { margin-bottom:20px; }
+    #taskList article { 
+      border:1px solid #ddd;
+      padding:10px;
+      margin-bottom:10px;
+      border-radius:6px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .completed { text-decoration: line-through; color:#888; }
+    select { padding:6px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Task Manager</h1>
+    <p>Filter tasks and toggle their "completed" status.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Filters</h2>
+      <label for="priorityFilter">Sort by:</label>
+      <select id="priorityFilter">
+        <option value="">All</option>
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </section>
+
+    <section id="taskSection">
+      <h2>Tasks</h2>
+      <div id="taskList"></div>
+    </section>
+  </main>
+
+  <footer><small>Q3 — jQuery AJAX + Query Params + PATCH</small></footer>
+</body>
+</html>
