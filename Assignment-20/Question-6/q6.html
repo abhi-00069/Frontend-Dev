@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q6 - User Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="q6.js" defer></script>
+
+  <style>
+    body { font-family: Arial; padding:20px; max-width:600px; margin:auto; }
+    header, main { margin-bottom:20px; }
+    .field { margin-bottom:12px; }
+    input { width:100%; padding:8px; }
+    button { padding:8px 14px; }
+    .success { color:green; font-weight:bold; margin-top:12px; }
+    .error { color:#b00; font-weight:bold; margin-top:12px; }
+    .invalid { border:2px solid #b00; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>User Registration</h1>
+    <p>Checks for duplicate email using GET, then submits with POST using Axios.</p>
+  </header>
+
+  <main>
+    <form id="regForm" novalidate>
+      <div class="field">
+        <label>Name</label>
+        <input id="name" required>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input id="email" required>
+      </div>
+
+      <div class="field">
+        <label>Password</label>
+        <input id="password" type="password" required>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="message"></div>
+  </main>
+
+  <footer><small>Q6 — Axios GET + POST</small></footer>
+</body>
+</html>
