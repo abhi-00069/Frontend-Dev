@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q7 - Course Search</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q7.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .course { padding:8px; border-bottom:1px solid #eee; }
+    .matched { background: #fff7d6; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Courses</h1>
+    <input id="search" placeholder="Search courses...">
+    <button id="clear">Clear</button>
+    <div id="count">Matched: 0</div>
+
+    <section id="courseList">
+      <article class="course">JavaScript Basics</article>
+      <article class="course">Advanced CSS</article>
+      <article class="course">React for Beginners</article>
+      <article class="course">Node.js & Express</article>
+      <article class="course">Data Structures</article>
+    </section>
+  </main>
+</body>
+</html>
