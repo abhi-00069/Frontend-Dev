@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Q6 Table Filter</title>
+  <link rel="stylesheet" href="q6.css">
+</head>
+<body>
+  <div class="filter-app">
+    <input id="searchBox" placeholder="Search students..." />
+    <table id="studentsTable">
+      <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+      <tbody>
+        <tr><td>Alice</td><td>CSE</td><td>9.1</td></tr>
+        <tr><td>Bob</td><td>ECE</td><td>8.4</td></tr>
+        <tr><td>Charlie</td><td>ME</td><td>7.8</td></tr>
+        <tr><td>Diana</td><td>CSE</td><td>8.9</td></tr>
+        <tr><td>Eric</td><td>CE</td><td>8.0</td></tr>
+      </tbody>
+    </table>
+    <div id="noResults" class="hidden">No results found</div>
+  </div>
+  <script src="q6.js"></script>
+</body>
+</html>
