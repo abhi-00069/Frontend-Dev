@@ -1,0 +1,23 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Doe" },
+    { "id": 2, "name": "Bob Gray" },
+    { "id": 3, "name": "Clara Miles" },
+    { "id": 4, "name": "David King" },
+    { "id": 5, "name": "Eva Stone" }
+  ],
+  "orders": [
+    { "id": 1, "amount": 120.0 },
+    { "id": 2, "amount": 340.5 },
+    { "id": 3, "amount": 89.99 },
+    { "id": 4, "amount": 49.5 },
+    { "id": 5, "amount": 279.0 }
+  ],
+  "products": [
+    { "id": 1, "name": "Backpack" },
+    { "id": 2, "name": "Keyboard" },
+    { "id": 3, "name": "Laptop Stand" },
+    { "id": 4, "name": "Mousepad" },
+    { "id": 5, "name": "Webcam" }
+  ]
+}
