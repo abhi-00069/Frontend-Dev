@@ -1,0 +1,7 @@
+body { font-family: Arial, Helvetica, sans-serif; padding:20px; }
+.multi-step { max-width:480px; margin:0 auto; }
+.hidden { display:none; }
+.step { margin-bottom:12px; }
+.navigation { display:flex; justify-content:space-between; gap:8px; }
+#summary { margin-top:16px; padding:12px; border:1px solid #ddd; border-radius:6px; }
+input { width:100%; padding:6px; box-sizing:border-box; }
