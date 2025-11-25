@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q3.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .faq { max-width:760px; }
+    .question { padding:10px; border-bottom:1px solid #eee; cursor:pointer; }
+    .answer { display:none; padding:8px 10px; background:#fafafa; }
+    .question.focused { background:#fffbe6; }
+  </style>
+</head>
+<body>
+  <main class="faq">
+    <h1>FAQ</h1>
+
+    <div class="qa">
+      <div class="question" tabindex="0">What is your refund policy?</div>
+      <div class="answer">
+        <p>Refunds within 30 days.</p>
+        <input class="answer-input" placeholder="Ask more..." />
+      </div>
+    </div>
+
+    <div class="qa">
+      <div class="question" tabindex="0">How to contact support?</div>
+      <div class="answer">
+        <p>Contact via email support@example.com</p>
+        <input class="answer-input" placeholder="Leave a message..." />
+      </div>
+    </div>
+
+    <div class="qa">
+      <div class="question" tabindex="0">Where are you located?</div>
+      <div class="answer">
+        <p>We are worldwide remote.</p>
+        <input class="answer-input" placeholder="More info..." />
+      </div>
+    </div>
+
+    <div class="qa">
+      <div class="question" tabindex="0">Do you offer student discounts?</div>
+      <div class="answer">
+        <p>Yes, with valid ID.</p>
+        <input class="answer-input" placeholder="Apply here..." />
+      </div>
+    </div>
+
+    <div class="qa">
+      <div class="question" tabindex="0">Can I upgrade my plan?</div>
+      <div class="answer">
+        <p>Upgrades available anytime.</p>
+        <input class="answer-input" placeholder="Start upgrade..." />
+      </div>
+    </div>
+  </main>
+</body>
+</html>
