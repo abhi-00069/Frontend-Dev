@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q6 - Subscriptions</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q6.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .topic { padding:6px; border:1px solid #ddd; margin-bottom:6px; }
+    .subscribed { background:#e6ffe6; }
+    .message { margin-top:10px; color:green; font-weight:700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Subscription Topics</h1>
+    <div id="topics">
+      <div class="topic" data-topic="news">News <button class="subscribe">Subscribe</button> <button class="unsubscribe">Unsubscribe</button></div>
+      <div class="topic" data-topic="updates">Product Updates <button class="subscribe">Subscribe</button> <button class="unsubscribe">Unsubscribe</button></div>
+      <div class="topic" data-topic="events">Events <button class="subscribe">Subscribe</button> <button class="unsubscribe">Unsubscribe</button></div>
+      <div class="topic" data-topic="offers">Offers <button class="subscribe">Subscribe</button> <button class="unsubscribe">Unsubscribe</button></div>
+      <div class="topic" data-topic="alerts">Alerts <button class="subscribe">Subscribe</button> <button class="unsubscribe">Unsubscribe</button></div>
+    </div>
+
+    <div style="margin-top:10px;">
+      <input id="newTopicName" placeholder="New topic name">
+      <button id="addTopic">Add Topic</button>
+    </div>
+
+    <div id="messages"></div>
+  </main>
+</body>
+</html>
