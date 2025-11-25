@@ -1,0 +1,9 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Kumar", "email": "alice@gmail.com", "password": "pass1234" },
+    { "id": 2, "name": "Bob Singh", "email": "bob@gmail.com", "password": "mypassword" },
+    { "id": 3, "name": "Carla Mehta", "email": "carla@gmail.com", "password": "securepwd" },
+    { "id": 4, "name": "Deepak Rao", "email": "deepak@gmail.com", "password": "password11" },
+    { "id": 5, "name": "Eva Shah", "email": "eva@gmail.com", "password": "qwerty123" }
+  ]
+}
