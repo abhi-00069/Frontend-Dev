@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q5 - Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q5.js" defer></script>
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .department { border:1px solid #ddd; padding:10px; margin-bottom:10px; }
+    .member { padding:6px; cursor:pointer; }
+    .highlight { background:#fff3bf; }
+    .contact { display:none; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Team Members</h1>
+
+    <section class="department" data-dept="Engineering">
+      <h2 class="dept-title">Engineering (click to change bg)</h2>
+      <div class="members">
+        <div class="member" data-manager="m1">Alice <span class="contact">alice@x.com</span></div>
+        <div class="member" data-manager="m1">Bob <span class="contact">bob@x.com</span></div>
+        <div class="member" data-manager="m2">Charlie <span class="contact">charlie@x.com</span></div>
+        <div class="member" data-manager="m2">Diana <span class="contact">diana@x.com</span></div>
+        <div class="member" data-manager="m1">Eve <span class="contact">eve@x.com</span></div>
+      </div>
+    </section>
+
+    <section class="department" data-dept="Design">
+      <h2 class="dept-title">Design</h2>
+      <div class="members">
+        <div class="member" data-manager="m3">Fay <span class="contact">fay@x.com</span></div>
+        <div class="member" data-manager="m3">Gus <span class="contact">gus@x.com</span></div>
+        <div class="member" data-manager="m3">Hana <span class="contact">hana@x.com</span></div>
+        <div class="member" data-manager="m4">Ian <span class="contact">ian@x.com</span></div>
+        <div class="member" data-manager="m4">Jill <span class="contact">jill@x.com</span></div>
+      </div>
+    </section>
+
+    <div>
+      <button id="randomEmployee">Select Random Employee</button>
+      <button id="collapseTeams">Collapse Teams</button>
+    </div>
+  </main>
+</body>
+</html>
