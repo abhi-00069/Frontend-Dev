@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q1 - Live Product Search</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="q1.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q1.js" defer></script>
+  <style>
+    /* minimal styling embedded to keep files small */
+    body { font-family: Arial, sans-serif; padding:20px; max-width:900px; margin:auto; }
+    header, main, footer { margin-bottom:16px; }
+    .search-row { display:flex; gap:8px; align-items:center; }
+    #searchInput { flex:1; padding:8px; font-size:16px; }
+    #results { margin-top:12px; display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+    .card { border:1px solid #ddd; padding:8px; border-radius:6px; display:flex; gap:8px; align-items:flex-start; background:#fff; }
+    .thumb { width:72px; height:72px; object-fit:cover; border-radius:4px; }
+    .meta { flex:1; }
+    .name { font-weight:700; margin-bottom:6px; }
+    .price { color:#2b8a3e; font-weight:700; }
+    .loading { display:inline-block; padding:6px 10px; background:#f0f0f0; border-radius:4px; }
+    .hidden { display:none; }
+    #noResults { font-weight:700; color:#b00; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Live Product Search</h1>
+    <p>Type to search products (powered by JSON Server at <code>/products?q=...</code>)</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="search-label">
+      <label id="search-label" for="searchInput">Search products</label>
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Start typing product name..." aria-label="Search products">
+        <div id="loadingIndicator" class="loading hidden" aria-hidden="true">Loading...</div>
+        <button id="clearBtn">Clear</button>
+      </div>
+
+      <div id="results" aria-live="polite" aria-atomic="true"></div>
+      <div id="noResults" class="hidden">No products found</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Q1 — Uses jQuery AJAX to GET <code>/products?q=value</code></small>
+  </footer>
+</body>
+</html>
