@@ -1,0 +1,19 @@
+{
+  "timetable": [
+    { "id": 1, "day": "Monday", "subject": "Mathematics", "faculty": "Dr. Sharma", "time": "09:00 AM" },
+    { "id": 2, "day": "Monday", "subject": "Physics", "faculty": "Dr. Rao", "time": "11:00 AM" },
+    { "id": 3, "day": "Monday", "subject": "Computer Science", "faculty": "Prof. Singh", "time": "02:00 PM" },
+
+    { "id": 4, "day": "Tuesday", "subject": "Chemistry", "faculty": "Dr. Bhat", "time": "10:00 AM" },
+    { "id": 5, "day": "Tuesday", "subject": "English", "faculty": "Ms. Meera", "time": "12:00 PM" },
+
+    { "id": 6, "day": "Wednesday", "subject": "Data Structures", "faculty": "Prof. Rao", "time": "09:00 AM" },
+    { "id": 7, "day": "Wednesday", "subject": "Discrete Maths", "faculty": "Dr. Patel", "time": "01:00 PM" },
+
+    { "id": 8, "day": "Thursday", "subject": "Programming", "faculty": "Dr. Kapoor", "time": "10:00 AM" },
+    { "id": 9, "day": "Thursday", "subject": "Algorithms", "faculty": "Prof. Verma", "time": "02:00 PM" },
+
+    { "id": 10, "day": "Friday", "subject": "Electronics", "faculty": "Dr. Bose", "time": "11:00 AM" },
+    { "id": 11, "day": "Friday", "subject": "Art & Design", "faculty": "Ms. Ria", "time": "03:00 PM" }
+  ]
+}
