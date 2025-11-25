@@ -1,0 +1,7 @@
+body { font-family: Arial, Helvetica, sans-serif; padding:20px; }
+.filter-app { max-width:720px; margin:0 auto; }
+#searchBox { width:100%; padding:8px; margin-bottom:12px; box-sizing:border-box; }
+table { width:100%; border-collapse:collapse; }
+th, td { border:1px solid #ddd; padding:8px; text-align:left; }
+#noResults { margin-top:10px; color:#b00; font-weight:700; }
+.hidden { display:none; }
