@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q9 - Multi jQuery</title>
+
+  <!-- load jQuery v1.12.4 (old) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    // save jQuery v1 to variable jq1 and release $
+    var jq1 = jQuery.noConflict(true);
+    window.jq1 = jq1;
+  </script>
+
+  <!-- load jQuery v3 (new) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // keep jQuery v3 as $ (default)
+    // expose as jq3 as well
+    window.jq3 = jQuery;
+  </script>
+
+  <script src="q9.js" defer></script>
+
+  <style>
+    body { font-family: Arial; padding:20px; }
+    .carousel { width:300px; height:120px; border:1px solid #ddd; display:flex; align-items:center; justify-content:center; margin-bottom:10px; }
+    .widget { padding:8px; border:1px solid #eee; display:inline-block; margin-right:6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Dashboard Widgets</h1>
+    <div id="carousel" class="carousel">Slide 1</div>
+    <div id="notifications" class="widget">Notifications</div>
+    <div id="tools" class="widget">Tools</div>
+  </main>
+</body>
+</html>
